@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.css-5xe99f-MuiLinearProgress-bar1 {
+  background-color: #30a8de !important;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.slick-slider {
+  margin-right: -12px;
+  margin-left: -12px;
+}
+.slick-prev:before {
+  content: "\276E" !important;
+}
+.slick-next:before {
+  content: "\276F" !important;
+}
+.slick-dots li {
+  width: max-content;
+  height: max-content;
+}
