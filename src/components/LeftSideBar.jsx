@@ -31,7 +31,7 @@ const LeftSideBar = () => {
   }, []);
   return (
     <div
-      className="max-w-[290px] relative"
+      className="w-[290px] relative"
       style={{ height: "calc(100vh - 32px)" }}
     >
       <div className="bg-[#252531] text-center px-8 py-7">
