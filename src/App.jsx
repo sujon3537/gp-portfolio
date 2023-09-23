@@ -8,6 +8,10 @@ import Price from "./components/Price";
 import RightNavbar from "./components/RightNavbar";
 import Services from "./components/Services";
 import Testimonial from "./components/Testimonial";
+import TechBlog from "./components/TechBlog";
+import Contact from "./components/Contact";
+import GetInTouch from "./components/GetInTouch";
+import Footer from "./components/Footer";
 
 function App() {
   let [open, setOpen] = useState(false);
@@ -33,6 +37,10 @@ function App() {
         <Testimonial />
         <Clients />
         <Price />
+        <TechBlog />
+        <Contact />
+        <GetInTouch />
+        <Footer />
       </div>
       <div className="col-span-1 fixed top-4 right-4">
         <RightNavbar handleRightBar={handleRightBar} open={open} />
