@@ -48,7 +48,7 @@ const LeftSideBar = () => {
         <p className="text-textColor text-[13px]">Full-Stack Developer</p>
         <p className="text-textColor text-[13px] pt-1">Web Engineer</p>
       </div>
-      <div className="h-[330px] overflow-y-scroll no-scrollbar bg-[#20202A] px-7 divide-y divide-[#8c8c8e]/[0.3] flex flex-col">
+      <div className="h-[336px] overflow-y-scroll no-scrollbar bg-[#20202A] px-7 divide-y divide-[#8c8c8e]/[0.3] flex flex-col">
         <ul className="flex flex-col gap-y-3 my-4">
           <li className="flex justify-between">
             <span className="text-white text-[13px]">Residence:</span>

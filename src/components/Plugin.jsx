@@ -3,7 +3,7 @@ import GPLogo from "../assets/images/gp-logo.png";
 
 const Plugin = () => {
   return (
-    <div className="mt-8">
+    <div className="mt-8" id="plugins">
       <div className="flex justify-around my-5">
         <h3 className="text-[28px] font-bold text-white w-[270px]">
           Official WordPress plugins & themes

@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { BiSolidUser } from "react-icons/bi";
 import { MdOutlineAlternateEmail, MdOutlineEmail } from "react-icons/md";
 
 const GetInTouch = () => {
+  let [isNameActive, setIsNameActive] = useState(false);
+  let [isEmailActive, setIsEmailActive] = useState(false);
+  let [isMessageActive, setIsMessageActive] = useState(false);
   return (
     <div className="my-6">
       <h2 className="text-[17px] font-semibold text-white mb-6">
@@ -11,32 +14,56 @@ const GetInTouch = () => {
       <div className="bg-[#2D2D3A] p-7">
         <form className="flex flex-col gap-y-7">
           <div className="flex">
-            <span className="bg-[#20202A] p-3 text-textColor text-lg">
+            <span
+              className={
+                isNameActive
+                  ? "bg-primary p-4 text-[#20202A] text-lg transition duration-700"
+                  : "bg-[#20202A] p-4 text-textColor text-lg transition duration-700"
+              }
+            >
               <BiSolidUser />
             </span>
             <input
               type="text"
               placeholder="Name"
-              className="w-full bg-[#242430] outline-none text-[13px] text-white p-3 placeholder:text-[#8c8c8e] placeholder:text-[13px]"
+              onFocus={() => setIsNameActive(true)}
+              onBlur={() => setIsNameActive(false)}
+              className="w-full bg-[#242430] outline-none text-[13px] text-white p-4 placeholder:text-[#8c8c8e] placeholder:text-[13px]"
             />
           </div>
           <div className="flex">
-            <span className="bg-[#20202A] p-3 text-textColor text-lg">
+            <span
+              className={
+                isEmailActive
+                  ? "bg-primary p-4 text-[#20202A] text-lg transition duration-700"
+                  : "bg-[#20202A] p-4 text-textColor text-lg transition duration-700"
+              }
+            >
               <MdOutlineAlternateEmail />
             </span>
             <input
               type="email"
               placeholder="Email"
-              className="w-full bg-[#242430] outline-none text-[13px] text-white p-3 placeholder:text-[#8c8c8e] placeholder:text-[13px]"
+              onFocus={() => setIsEmailActive(true)}
+              onBlur={() => setIsEmailActive(false)}
+              className="w-full bg-[#242430] outline-none text-[13px] text-white p-4 placeholder:text-[#8c8c8e] placeholder:text-[13px]"
             />
           </div>
           <div className="flex">
-            <span className="bg-[#20202A] p-3 text-textColor text-lg">
+            <span
+              className={
+                isMessageActive
+                  ? "bg-primary p-4 text-[#20202A] text-lg transition duration-700"
+                  : "bg-[#20202A] p-4 text-textColor text-lg transition duration-700"
+              }
+            >
               <MdOutlineEmail />
             </span>
             <textarea
               placeholder="Message"
-              className="w-full h-[150px] bg-[#242430] outline-none text-[13px] text-white p-3 placeholder:text-[#8c8c8e] placeholder:text-[13px]"
+              onFocus={() => setIsMessageActive(true)}
+              onBlur={() => setIsMessageActive(false)}
+              className="w-full h-[150px] bg-[#242430] outline-none text-[13px] text-white p-4 placeholder:text-[#8c8c8e] placeholder:text-[13px]"
             ></textarea>
           </div>
           <a

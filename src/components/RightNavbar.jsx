@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+import { Link } from "react-scroll";
 
 const RightNavbar = ({ handleRightBar, open }) => {
   return (
@@ -30,7 +31,7 @@ const RightNavbar = ({ handleRightBar, open }) => {
           />
         )}
       </div>
-      <div className="">
+      <div>
         <h3
           className={
             open
@@ -66,7 +67,17 @@ const RightNavbar = ({ handleRightBar, open }) => {
                 : "font-medium text-[13px] tracking-widest text-textColor uppercase translate-x-[230px] transition duration-700"
             }
           >
-            Clients
+            <Link
+              activeClass="active"
+              to="plugins"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              onClick={handleRightBar}
+            >
+              Plugins
+            </Link>
           </li>
           <li
             className={
@@ -75,7 +86,17 @@ const RightNavbar = ({ handleRightBar, open }) => {
                 : "font-medium text-[13px] tracking-widest text-textColor uppercase translate-x-[230px] transition duration-700"
             }
           >
-            Clients
+            <Link
+              activeClass="active"
+              to="clients"
+              spy={true}
+              smooth={true}
+              offset={-7}
+              duration={500}
+              onClick={handleRightBar}
+            >
+              Clients
+            </Link>
           </li>
           <li
             className={
@@ -84,7 +105,17 @@ const RightNavbar = ({ handleRightBar, open }) => {
                 : "font-medium text-[13px] tracking-widest text-textColor uppercase translate-x-[230px] transition duration-700"
             }
           >
-            Contact
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              onClick={handleRightBar}
+            >
+              Contact
+            </Link>
           </li>
           <li
             className={
@@ -95,21 +126,6 @@ const RightNavbar = ({ handleRightBar, open }) => {
           >
             Privacy Policy
           </li>
-          {/* <li className="font-medium text-[13px] tracking-widest text-textColor uppercase">
-            Blog
-          </li>
-          <li className="font-medium text-[13px] tracking-widest text-textColor uppercase">
-            Clients
-          </li>
-          <li className="font-medium text-[13px] tracking-widest text-textColor uppercase">
-            Clients
-          </li>
-          <li className="font-medium text-[13px] tracking-widest text-textColor uppercase">
-            Contact
-          </li>
-          <li className="font-medium text-[13px] tracking-widest text-textColor uppercase">
-            Privacy Policy
-          </li> */}
         </ul>
       </div>
     </div>

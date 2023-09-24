@@ -44,7 +44,10 @@ const Clients = () => {
     clientImg20,
   ];
   return (
-    <div className="flex justify-between flex-wrap my-8 px-5 gap-x-20 gap-y-10">
+    <div
+      className="flex justify-between flex-wrap my-8 px-5 gap-x-20 gap-y-10"
+      id="clients"
+    >
       {imgArr.map((item) => (
         <img
           src={item}
