@@ -7,15 +7,14 @@ import {
   FaGithub,
   FaStackOverflow,
 } from "react-icons/fa";
+import Heading from "./Heading";
 
 const Contact = () => {
   return (
     <div className="mt-6" id="contact">
-      <h2 className="text-[17px] font-semibold text-white mb-6">
-        Contact Information
-      </h2>
-      <div className="flex justify-between gap-x-6 text-textColor text-[13px]">
-        <div className="bg-[#2C2C37] w-1/3 px-7 py-10">
+      <Heading title="Contact Information" />
+      <div className="flex justify-between flex-wrap gap-6 text-textColor text-[13px]">
+        <div className="bg-[#2C2C37] w-full md:w-[48%] lg:w-[31%] px-7 py-10">
           <ul className="flex flex-col gap-y-2">
             <li className="flex justify-between">
               <FaGlobe className="inline-block" />
@@ -29,7 +28,7 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-        <div className="bg-[#2C2C37] w-1/3 px-7 py-10">
+        <div className="bg-[#2C2C37] w-full md:w-[48%] lg:w-[31%] px-7 py-10">
           <ul className="flex flex-col gap-y-2">
             <li className="flex justify-between">
               <FaLinkedin className="inline-block" />
@@ -45,7 +44,7 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-        <div className="bg-[#2C2C37] w-1/3 px-7 py-10">
+        <div className="bg-[#2C2C37] w-full md:w-[48%] lg:w-[31%] px-7 py-10">
           <ul className="flex flex-col gap-y-2">
             <li className="flex justify-between">
               <FaGithub className="inline-block" />

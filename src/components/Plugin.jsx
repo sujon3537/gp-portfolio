@@ -4,7 +4,7 @@ import GPLogo from "../assets/images/gp-logo.png";
 const Plugin = () => {
   return (
     <div className="mt-8" id="plugins">
-      <div className="flex flex-col items-center gap-y-5 md:flex-row md:justify-around my-5">
+      <div className="flex flex-col items-center gap-y-5 md:flex-row md:justify-around my-8 md:my-5">
         <h3 className="text-[28px] font-bold text-white w-[270px]">
           Official WordPress plugins & themes
         </h3>

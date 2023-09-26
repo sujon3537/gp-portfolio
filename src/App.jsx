@@ -19,8 +19,8 @@ function App() {
     setOpen(!open);
   };
   return (
-    <div className="max-w-container mx-auto grid grid-cols-12 gap-1 py-4 box-border relative">
-      <div className="col-span-3 fixed top-4 left-4 z-20">
+    <div className="lg:max-w-container mx-auto overflow-x-hidden grid grid-cols-12 gap-1 py-4 box-border relative">
+      <div className="fixed top-4 left-4 z-20">
         <LeftSideBar />
       </div>
       <div
@@ -40,7 +40,7 @@ function App() {
         <GetInTouch />
         <Footer />
       </div>
-      <div className="col-span-1 fixed top-4 right-4">
+      <div className="fixed top-0 xl:top-4 right-4 z-30">
         <RightNavbar handleRightBar={handleRightBar} open={open} />
       </div>
     </div>

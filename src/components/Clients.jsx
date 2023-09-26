@@ -45,14 +45,14 @@ const Clients = () => {
   ];
   return (
     <div
-      className="flex justify-between flex-wrap my-8 px-5 gap-x-20 gap-y-10"
+      className="flex justify-around flex-wrap my-12 gap-x-20 gap-y-10"
       id="clients"
     >
       {imgArr.map((item) => (
         <img
           src={item}
           alt="client-img"
-          className="w-[115px] opacity-60 hover:opacity-100"
+          className="w-[104px] sm:w-[115px] opacity-60 hover:opacity-100"
         ></img>
       ))}
     </div>

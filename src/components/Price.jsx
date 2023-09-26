@@ -1,13 +1,12 @@
 import React from "react";
 import { BsCheck } from "react-icons/bs";
+import Heading from "./Heading";
 
 const Price = () => {
   return (
     <div>
-      <h2 className="text-[17px] font-semibold text-white mb-6">
-        Freelance Rate
-      </h2>
-      <div className="grid grid-cols-3 gap-x-6">
+      <Heading title="Freelance Rate" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="bg-[#2D2D3A] h-fit flex flex-col items-center gap-y-6 p-7">
           <h5 className="font-semibold text-sm text-white">Consultation</h5>
           <span className="text-[32px] font-semibold text-primary">

@@ -3,7 +3,7 @@ import blog1 from "../assets/images/WordPress-development.jpg";
 
 const BlogCard = () => {
   return (
-    <div className="max-w-[280px] h-fit mx-3">
+    <div className="max-w-full h-fit mx-3">
       <div className="w-full h-[165px]">
         <img src={blog1} alt="img1" className="w-full h-full" />
       </div>

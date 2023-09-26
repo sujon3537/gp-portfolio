@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Testimony from "./Testimony";
 import { PrevArrow, NextArrow } from "./Arrow";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
+import Heading from "./Heading";
 
 const Testimonial = () => {
   let [dotActive, setDotActive] = useState(0);
@@ -51,14 +52,21 @@ const Testimonial = () => {
         }
       ></div>
     ),
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
   };
   return (
-    <div className="mt-5 -mx-3">
-      <h2 className="text-[17px] font-semibold text-white mb-6">
-        Clients & Associates
-      </h2>
+    <div className="mt-5 md:-mx-3">
+      <Heading title="Clients & Associates" />
       <Slider {...settings}>
         <div>
           <Testimony />

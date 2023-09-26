@@ -5,8 +5,8 @@ export function PrevArrow(props) {
       className={className}
       style={{
         ...style,
-        left: "93%",
-        top: "110%",
+        left: window.innerWidth <= 425 ? "85%" : "93%",
+        top: "105%",
       }}
       onClick={onClick}
     />
@@ -20,7 +20,7 @@ export function NextArrow(props) {
       style={{
         ...style,
         right: "10px",
-        top: "110%",
+        top: "105%",
       }}
       onClick={onClick}
     />

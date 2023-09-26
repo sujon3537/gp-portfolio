@@ -38,7 +38,7 @@ const LeftSideBar = () => {
         onClick={() => setOpen(!open)}
       />
       <div
-        className={` relative xl:w-[290px] overflow-hidden transition-all ${
+        className={` relative xl:w-[290px] overflow-hidden transition-all duration-700 ${
           open ? "w-[290px]" : "w-0"
         }`}
         style={{ height: "calc(100vh - 32px)" }}

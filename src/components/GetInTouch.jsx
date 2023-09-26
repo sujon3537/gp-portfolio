@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BiSolidUser } from "react-icons/bi";
 import { MdOutlineAlternateEmail, MdOutlineEmail } from "react-icons/md";
+import Heading from "./Heading";
 
 const GetInTouch = () => {
   let [isNameActive, setIsNameActive] = useState(false);
@@ -8,9 +9,7 @@ const GetInTouch = () => {
   let [isMessageActive, setIsMessageActive] = useState(false);
   return (
     <div className="my-6">
-      <h2 className="text-[17px] font-semibold text-white mb-6">
-        Get in touch
-      </h2>
+      <Heading title="Get in touch" />
       <div className="bg-[#2D2D3A] p-7">
         <form className="flex flex-col gap-y-7">
           <div className="flex">

@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { PrevArrow, NextArrow } from "./Arrow";
 import BlogCard from "./BlogCard";
+import Heading from "./Heading";
 
 const TechBlog = () => {
   let [dotActive, setDotActive] = useState(0);
@@ -53,12 +54,28 @@ const TechBlog = () => {
         }
       ></div>
     ),
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 426,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
   };
   return (
-    <div className="mt-6 mb-14">
-      <h2 className="text-[17px] font-semibold text-white mb-6">Tech Blog</h2>
+    <div className="mt-6 mb-14 w-full" id="blog">
+      <Heading title="Tech Blog" />
       <Slider {...settings}>
         <BlogCard />
         <BlogCard />
