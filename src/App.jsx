@@ -24,11 +24,9 @@ function App() {
         <LeftSideBar />
       </div>
       <div
-        className={
-          open
-            ? "col-start-3 col-span-8 transition-all duration-700"
-            : "col-start-4 col-span-8 transition-all duration-700"
-        }
+        className={`${
+          open ? "xl:col-start-3" : "xl:col-start-4"
+        } col-start-1 col-end-13 xl:col-span-8 mx-4 transition-all duration-700`}
       >
         <Banner />
         <Featured />

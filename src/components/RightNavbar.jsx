@@ -6,11 +6,9 @@ import { Link } from "react-scroll";
 const RightNavbar = ({ handleRightBar, open }) => {
   return (
     <div
-      className={
-        open
-          ? "bg-[#20202A] w-[200px] h-screen transition-all duration-700"
-          : "bg-[#20202A] w-[90px] h-screen transition-all duration-700"
-      }
+      className={`bg-[#20202A] w-0 overflow-hidden xl:w-[90px] ${
+        open ? "w-[200px] xl:w-[200px]" : "w-[90px]"
+      } h-screen transition-all duration-700`}
     >
       <div
         className={

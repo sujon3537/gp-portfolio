@@ -4,13 +4,13 @@ import GPLogo from "../assets/images/gp-logo.png";
 const Plugin = () => {
   return (
     <div className="mt-8" id="plugins">
-      <div className="flex justify-around my-5">
+      <div className="flex flex-col items-center gap-y-5 md:flex-row md:justify-around my-5">
         <h3 className="text-[28px] font-bold text-white w-[270px]">
           Official WordPress plugins & themes
         </h3>
         <img src={GPLogo} alt="logo" />
       </div>
-      <div className="grid grid-cols-2">
+      <div className="grid md:grid-cols-2">
         <div className="relative min-h-fit">
           <div className="w-[6px] h-[calc(100%-30px)] bg-[#191923] absolute right-5"></div>
           <div className="bg-[#2C2C37] p-[40px] mr-11 mb-7">

@@ -20,11 +20,11 @@ const Counter = (props) => {
   }, []);
 
   return (
-    <div className="flex items-center gap-x-4">
+    <div className="flex items-center justify-around w-[49%] md:w-[24%]">
       <span className="text-[22px] font-semibold text-primary">
         {number} {props.plus && "+"}
       </span>
-      <h3 className="text-[13px] text-white">{props.title}</h3>
+      <h3 className="text-[13px] text-white w-20 lg:w-full">{props.title}</h3>
     </div>
   );
 };
