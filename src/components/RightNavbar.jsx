@@ -17,7 +17,8 @@ const RightNavbar = ({ handleRightBar, open }) => {
       <div
         className={`bg-[#20202A] overflow-hidden ${
           open ? "w-[200px]" : "w-0 xl:w-[90px]"
-        } h-screen transition-all duration-700`}
+        } transition-all duration-700`}
+        style={{ height: "calc(100vh - 32px)" }}
       >
         <div
           className={
@@ -52,7 +53,7 @@ const RightNavbar = ({ handleRightBar, open }) => {
             <li
               className={
                 open
-                  ? "font-medium text-[13px] tracking-widest text-textColor uppercase transition duration-700 mb-2"
+                  ? "font-medium text-[13px] tracking-widest text-textColor hover:text-[#fcfcfa] uppercase transition duration-700 mb-2 cursor-pointer"
                   : "font-medium text-[13px] tracking-widest text-textColor uppercase translate-x-[230px] transition duration-700"
               }
             >
@@ -61,12 +62,12 @@ const RightNavbar = ({ handleRightBar, open }) => {
             <li
               className={
                 open
-                  ? "font-medium text-[13px] tracking-widest text-textColor uppercase transition duration-700 mb-2"
+                  ? "font-medium text-[13px] tracking-widest text-textColor hover:text-[#fcfcfa] uppercase transition duration-700 mb-2 cursor-pointer"
                   : "font-medium text-[13px] tracking-widest text-textColor uppercase translate-x-[230px] transition duration-700"
               }
             >
               <Link
-                activeClass="active"
+                activeClass="text-[#fcfcfa]"
                 to="blog"
                 spy={true}
                 smooth={true}
@@ -80,12 +81,12 @@ const RightNavbar = ({ handleRightBar, open }) => {
             <li
               className={
                 open
-                  ? "font-medium text-[13px] tracking-widest text-textColor uppercase transition duration-700 mb-2"
+                  ? "font-medium text-[13px] tracking-widest text-textColor hover:text-[#fcfcfa] uppercase transition duration-700 mb-2 cursor-pointer"
                   : "font-medium text-[13px] tracking-widest text-textColor uppercase translate-x-[230px] transition duration-700"
               }
             >
               <Link
-                activeClass="active"
+                activeClass="text-[#fcfcfa]"
                 to="plugins"
                 spy={true}
                 smooth={true}
@@ -99,12 +100,12 @@ const RightNavbar = ({ handleRightBar, open }) => {
             <li
               className={
                 open
-                  ? "font-medium text-[13px] tracking-widest text-textColor uppercase transition duration-700 mb-2"
+                  ? "font-medium text-[13px] tracking-widest text-textColor hover:text-[#fcfcfa] uppercase transition duration-700 mb-2 cursor-pointer"
                   : "font-medium text-[13px] tracking-widest text-textColor uppercase translate-x-[230px] transition duration-700"
               }
             >
               <Link
-                activeClass="active"
+                activeClass="text-[#fcfcfa]"
                 to="clients"
                 spy={true}
                 smooth={true}
@@ -118,12 +119,12 @@ const RightNavbar = ({ handleRightBar, open }) => {
             <li
               className={
                 open
-                  ? "font-medium text-[13px] tracking-widest text-textColor uppercase transition duration-700 mb-2"
+                  ? "font-medium text-[13px] tracking-widest text-textColor hover:text-[#fcfcfa] uppercase transition duration-700 mb-2 cursor-pointer"
                   : "font-medium text-[13px] tracking-widest text-textColor uppercase translate-x-[230px] transition duration-700"
               }
             >
               <Link
-                activeClass="active"
+                activeClass="text-[#fcfcfa]"
                 to="contact"
                 spy={true}
                 smooth={true}
@@ -137,7 +138,7 @@ const RightNavbar = ({ handleRightBar, open }) => {
             <li
               className={
                 open
-                  ? "font-medium text-[13px] tracking-widest text-textColor uppercase transition duration-700 mb-2"
+                  ? "font-medium text-[13px] tracking-widest text-textColor hover:text-[#fcfcfa] uppercase transition duration-700 mb-2 cursor-pointer"
                   : "font-medium text-[13px] tracking-widest text-textColor uppercase translate-x-[230px] transition duration-700"
               }
             >
